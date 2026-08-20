@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net" agent="kimi" version="24.0.0" type="device">
+  <diagram id="req-approval" name="Согласование требования">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="start" value="Начало" style="shape=mxgraph.flowchart.terminator;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="350" y="20" width="120" height="40" as="geometry"/></mxCell>
+        <mxCell id="s1" value="Предложено" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="330" y="90" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="d1" value="Рассмотреть требование?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="345" y="170" width="130" height="70" as="geometry"/></mxCell>
+        <mxCell id="s2" value="Разработка" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="330" y="270" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="s3" value="Подготовлено" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="330" y="350" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="d2" value="Одобрить требование?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="345" y="430" width="130" height="70" as="geometry"/></mxCell>
+        <mxCell id="s4" value="Одобрено" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="330" y="530" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="d3" value="Включить в базовую версию?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="345" y="610" width="130" height="70" as="geometry"/></mxCell>
+        <mxCell id="s5" value="Реализовано" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="330" y="710" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="d4" value="Проверка пройдена?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="345" y="790" width="130" height="70" as="geometry"/></mxCell>
+        <mxCell id="end_ok" value="Проверено" style="shape=mxgraph.flowchart.terminator;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="340" y="890" width="140" height="50" as="geometry"/></mxCell>
+        <mxCell id="end_post" value="Отложено" style="shape=mxgraph.flowchart.terminator;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="560" y="420" width="150" height="50" as="geometry"/></mxCell>
+        <mxCell id="end_del" value="Удалено" style="shape=mxgraph.flowchart.terminator;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="560" y="620" width="150" height="50" as="geometry"/></mxCell>
+        <mxCell id="end_rej" value="Отклонено" style="shape=mxgraph.flowchart.terminator;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="560" y="300" width="150" height="50" as="geometry"/></mxCell>
+        <mxCell id="e0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="start" target="s1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="s1" target="d1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" value="Принято в работу" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="d1" target="s2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" value="Не принято" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="d1" target="end_rej"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="s2" target="s3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="s3" target="d2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="Одобрено" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="d2" target="s4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" value="Отложено" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="d2" target="end_post"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" value="Отклонено" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="d2" target="end_rej"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="s4" target="d3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" value="Включено" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="d3" target="s5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e11" value="Исключено" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="d3" target="end_del"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="s5" target="d4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e13" value="Успешно" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="d4" target="end_ok"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e14" value="Требуется доработка" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="d4" target="s2"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
